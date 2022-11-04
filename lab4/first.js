@@ -77,7 +77,7 @@ function  findLongestWord(str){
     return longestWord;
 
 }
-alert(findLongestWord(["haft","hafth","eifeuih"]));
+//alert(findLongestWord(["haft","hafth","eifeuih"]));
 function  filterLongWords(str,x){
     return  str.filter(i=> i.length>x);
   //longestWord;
