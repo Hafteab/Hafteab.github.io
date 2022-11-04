@@ -8,7 +8,6 @@ function max(num1,num2){
       }
 
 }
-//alert(max(9,8));
 function maxOfThree(a,b,c){
 
     if (a>b){
@@ -24,7 +23,6 @@ function maxOfThree(a,b,c){
       return c;
     }
 }
-//alert(maxOfThree(33,16,25));
 function isVowel(char){
    
     switch(char) {
@@ -37,7 +35,6 @@ function isVowel(char){
             return false;
     }
 }
-//alert(isVowel('k'));
 function sum(numbers){
     var total=0;
     for(var i=0;i<numbers.length;i++){
@@ -52,9 +49,6 @@ function multiply(numbers){
     }
     return total;
 }
-//alert(multiply([1,2,3,4]));
-//console.log(multiply([1,2,3,4]));
-//console.log(sum([1,2,3,4]));
 function reverse(str){
     var tot="";
    var ch;
@@ -64,7 +58,6 @@ function reverse(str){
     }
     return tot;
 }
-//alert(reverse("Haftish"));
 function  findLongestWord(str){
     var longestWord=0;
     for(var i=0;i<str.length;i++){
@@ -77,12 +70,11 @@ function  findLongestWord(str){
     return longestWord;
 
 }
-//alert(findLongestWord(["haft","hafth","eifeuih"]));
+
 function  filterLongWords(str,x){
     return  str.filter(i=> i.length>x);
   //longestWord;
 }
-//alert(findLongestWord(["abc","iej"],1));
 function jsfiddle(a){
     const b = a.map(function(elem, i, array) {
         return elem * 10;
