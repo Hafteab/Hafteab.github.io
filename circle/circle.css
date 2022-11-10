@@ -1,0 +1,40 @@
+body {
+    font-family: monospace;
+}
+
+.container {
+    height: 97vh;
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    transition:all 1s;
+   -webkit-transition:all 1s;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    width: 100pt;
+
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+
+    line-height: 20pt;
+    margin-left: 1400px;
+}
+
+input {
+    line-height: 15pt;
+}
+
+button{
+    width: 50pt;
+    margin-top: 10pt;
+}
