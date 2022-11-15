@@ -3,10 +3,10 @@
 describe("Account-Class", function () {
 
     describe("check the account info after create", function (){
-        const account = new Account(5600000010);
+        const account = new Account(1234567890);
 
         it("check the account number", function () {
-            assert.equal("5600000010", account.getNumber());
+            assert.equal("1234567890", account.getNumber());
         });
     
         it("check the account balance", function () {
@@ -14,26 +14,26 @@ describe("Account-Class", function () {
         });
     });
 
-    describe("check the account info after deposit 5000.50", function (){
-        const account = new Account(5600000010);
-        account.deposit(5000.50);
+    describe("check the account info after deposit 1000", function (){
+        const account = new Account(1234567890);
+        account.deposit(1000);
 
         it("check the account balance", function () {
-            assert.equal("5000.50", account.getBalance());
+            assert.equal("1000", account.getBalance());
         });
     });
 
-    describe("check the account info after withdraw 2500.50", function (){
-        const account = new Account(5600000010);
-        account.deposit(5000.50);
-        account.withdraw(2500.50);
+    describe("check the account info after withdraw 250", function (){
+        const account = new Account(1234567890);
+        account.deposit(1000);
+        account.withdraw(250);
 
         it("check the account balance", function () {
-            assert.equal("2500", account.getBalance());
+            assert.equal("750", account.getBalance());
         });
 
         it("test toString method", function () {
-            assert.equal("Account 5600000010: balance 2500", account.toString());
+            assert.equal("Account 1234567890: balance 750", account.toString());
         });
     });
 
@@ -42,7 +42,7 @@ describe("Account-Class", function () {
 describe("SavingsAccount-Class", function () {
 
     describe("check the account info after interest is deposited", function (){
-        const account = new SavingsAccount(5600000020, 10);
+        const account = new SavingsAccount(1234567890, 10);
         
         account.deposit(1000);
         account.addInterest();
@@ -52,7 +52,7 @@ describe("SavingsAccount-Class", function () {
         });
 
         it("test toString method", function () {
-            assert.equal("Account 5600000020: balance 1100: interest 10%", account.toString());
+            assert.equal("Account 1234567890: balance 1100: interest 10%", account.toString());
         });
     });
 
